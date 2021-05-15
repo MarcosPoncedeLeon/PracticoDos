@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_layout"
+    android:onClick="sumar"
+    tools:context=".PrimeraActivity">
+
+    <Button
+        android:id="@+id/btn_restar"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:onClick="restar"
+        android:text="@string/restar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:text="@string/resetear"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_zoom_menos" />
+
+    <Button
+        android:id="@+id/btn_ocultar"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:text="@string/ocultar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_reset"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_zoom_mas" />
+
+    <Button
+        android:id="@+id/btn_zoom_menos"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:text="@string/zoom_resta"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_restar" />
+
+    <Button
+        android:id="@+id/btn_zoom_mas"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:text="@string/zoom_suma"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_zoom_menos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sumar" />
+
+    <Button
+        android:id="@+id/btn_sumar"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/violeta_boton"
+        android:onClick="sumar"
+        android:text="@string/sumar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_restar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="153dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="212dp"
+        android:gravity="center"
+        android:text="@string/cero"
+        android:textColor="#151414"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="126dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bolsadinero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

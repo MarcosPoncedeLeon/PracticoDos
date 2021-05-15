@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practicoDos</string>
+    <string name="txt1">Currency Converter</string>
+    <string name="dolar">Dollar</string>
+    <string name="euro">Euro</string>
+    <string name="real">Real</string>
+    <string name="seleccion_moneda">Select a currency</string>
+    <string name="Ingreso">Enter amount in pesos</string>
+    <string name="convertir">TURN INTO</string>
+    <string name="reinicio">RESTART</string>
+    <string name="resultado">Result</string>
+    <string name="contenido">Logo</string>
+    <string name="sumar">ADD</string>
+    <string name="restar">SUBTRACT</string>
+    <string name="zoom_suma">ZOOM +</string>
+    <string name="zoom_resta">ZOOM -</string>
+    <string name="ocultar">HIDE</string>
+    <string name="resetear">RESET</string>
+    <string name="cero">0</string>
+
+</resources>
