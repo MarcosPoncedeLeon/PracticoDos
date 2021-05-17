@@ -21,7 +21,8 @@ public class PrimeraActivity extends AppCompatActivity {
 
         btn_reset.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 valor = 0;
                 String valor_string= String.valueOf(valor);
                 tv1.setText(valor_string);
@@ -30,7 +31,8 @@ public class PrimeraActivity extends AppCompatActivity {
 
         btn_ocultar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 tv1.setText(" ");
             }
         });

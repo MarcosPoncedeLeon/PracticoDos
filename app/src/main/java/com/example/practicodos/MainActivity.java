@@ -32,23 +32,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int pesos, resultado;
                 pesos = Integer.parseInt(txtPesos.getText().toString());
-                if(rbDolar.isChecked()==true){
-                    resultado = pesos * 150;
-                    String resultado_string = String.valueOf(resultado);
-                    tvResultado.setText(resultado_string);
-                }else if (rbEuro.isChecked()==true){
-                    resultado = pesos * 114;
-                    String resultado_string = String.valueOf(resultado);
-                    tvResultado.setText(resultado_string);
-                }else if (rbReal.isChecked()==true){
-                    resultado = pesos * 18;
-                    String resultado_string = String.valueOf(resultado);
-                    tvResultado.setText(resultado_string);
-                }else{
-                    Toast.makeText(MainActivity.this, "Seleccione una moneda", Toast.LENGTH_SHORT).show();
+                    if (rbDolar.isChecked() == true) {
+                        resultado = pesos * 150;
+                        String resultado_string = String.valueOf(resultado);
+                        tvResultado.setText(resultado_string + " pesos");
+                    } else if (rbEuro.isChecked() == true) {
+                        resultado = pesos * 114;
+                        String resultado_string = String.valueOf(resultado);
+                        tvResultado.setText(resultado_string + " pesos");
+                    } else if (rbReal.isChecked() == true) {
+                        resultado = pesos * 18;
+                        String resultado_string = String.valueOf(resultado);
+                        tvResultado.setText(resultado_string + " pesos");
+                    } else {
+                        Toast.makeText(MainActivity.this, "Seleccione una moneda", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-        });
+            });
 
         btnReinicio.setOnClickListener(new View.OnClickListener() {
             @Override
