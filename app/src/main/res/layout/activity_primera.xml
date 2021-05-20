@@ -53,7 +53,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="76dp"
         android:backgroundTint="@color/violeta_boton"
-        android:onClick="zoommenos"
         android:text="@string/zoom_resta"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +95,7 @@
         android:gravity="center"
         android:text="@string/cero"
         android:textColor="#151414"
-        android:textSize="10sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

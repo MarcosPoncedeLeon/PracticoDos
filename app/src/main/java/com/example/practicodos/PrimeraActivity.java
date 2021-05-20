@@ -45,19 +45,25 @@ public class PrimeraActivity extends AppCompatActivity {
         btn_zoom_mas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Float size_float = (Float)tv1.getTextSize();
-                size_float++;
-                tv1.setTextSize(size_float);
+                Float size_float = (Float)tv1.getTextSize()*1.1f; //incremento 10%
+                tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, size_float);
+            }
+        });
+
+        btn_zoom_menos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                zoomMenos();
             }
         });
 
 
     }
 
-    public void zoommenos(View view){
-        Float menor = (Float)tv1.getTextSize();
-        menor--;
-        tv1.setTextSize(menor);
+    private void zoomMenos(){
+        Float menor = (Float)tv1.getTextSize()*0.9f; //reduzco el 10%
+        tv1.setTextSize(TypedValue.COMPLEX_UNIT_PX, menor); //con COMPLEX_UNIT  indico que trabajo con unidades en  PX (pixeles)
+                                                            //ya que el getTextSize trae el tamaño del texto en pixeles.
     }
 
 
