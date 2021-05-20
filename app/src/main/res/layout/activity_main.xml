@@ -29,7 +29,7 @@
         android:id="@+id/txtPesos"
         android:layout_width="201dp"
         android:layout_height="41dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/Ingreso"
@@ -92,12 +92,13 @@
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:text="@string/seleccion_moneda"
         android:textColor="@color/violeta_boton"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPesos" />
 
@@ -109,7 +110,7 @@
         android:backgroundTint="@color/violeta_boton"
         android:text="@string/convertir"
         app:layout_constraintEnd_toStartOf="@+id/btnReinicio"
-        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
 
@@ -142,7 +143,7 @@
         android:id="@+id/logo_main"
         android:layout_width="89dp"
         android:layout_height="85dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="56dp"
         android:contentDescription="@string/contenido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

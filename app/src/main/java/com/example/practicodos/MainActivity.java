@@ -30,25 +30,32 @@ public class MainActivity extends AppCompatActivity {
 
         btnConvertir.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                int pesos, resultado;
-                pesos = Integer.parseInt(txtPesos.getText().toString());
+                Float pesos, resultado;
+
+                if(txtPesos.getText().toString().isEmpty()){ //verifico que el campo no este vacio
+                    Toast.makeText(MainActivity.this, "Ingrese monto", Toast.LENGTH_SHORT).show();
+                    return;
+                }else{
+                    String resultado_string;
+                    pesos = Float.parseFloat(txtPesos.getText().toString());
                     if (rbDolar.isChecked() == true) {
                         resultado = pesos * 150;
-                        String resultado_string = String.valueOf(resultado);
+                        resultado_string = String.valueOf(resultado);
                         tvResultado.setText(resultado_string + " pesos");
                     } else if (rbEuro.isChecked() == true) {
                         resultado = pesos * 114;
-                        String resultado_string = String.valueOf(resultado);
+                        resultado_string = String.valueOf(resultado);
                         tvResultado.setText(resultado_string + " pesos");
                     } else if (rbReal.isChecked() == true) {
                         resultado = pesos * 18;
-                        String resultado_string = String.valueOf(resultado);
+                        resultado_string = String.valueOf(resultado);   //convertir el int a string
                         tvResultado.setText(resultado_string + " pesos");
                     } else {
                         Toast.makeText(MainActivity.this, "Seleccione una moneda", Toast.LENGTH_SHORT).show();
                     }
                 }
-            });
+            }
+        });
 
         btnReinicio.setOnClickListener(new View.OnClickListener() {
             @Override
