@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">practicoDos</string>
+    <string name="app_name">Practice Two</string>
     <string name="txt1">Currency Converter</string>
     <string name="dolar">Dollar</string>
     <string name="euro">Euro</string>
